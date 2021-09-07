@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>refactorx</name>
+    </assembly>
+    <members>
+        <member name="T:refactorx.Controllers.ApplicationController">
+            <summary>
+            Описание контроллера Application
+            </summary>
+        </member>
+        <member name="M:refactorx.Controllers.ApplicationController.Create(refactorx.BL.Models.Request.ApplicationRequestModel)">
+            <summary>
+            Принимает заявку в формате json. Возвращает уникальный номер и Id принятой заявки в формате json.
+            </summary>
+            <param name="application"></param>
+            <returns></returns>
+        </member>
+        <member name="M:refactorx.Controllers.ApplicationController.Status(System.String)">
+            <summary>
+            Возвращает результат рассмотрения заявки с некоторыми деталями по заявке по ее номеру в формате json (статус одобрения кредита)
+            </summary>
+            <param name="num">Номер заявки (ApplicationNum)</param>
+            <returns></returns>
+        </member>
+        <member name="T:refactorx.Controllers.ScoringController">
+            <summary>
+            Описание контроллера Scoring
+            </summary>
+        </member>
+        <member name="M:refactorx.Controllers.ScoringController.Evaluate">
+            <summary>
+            Мок сервиса скоринга, который возвращает решение по заявке
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
